@@ -1,0 +1,15 @@
+{
+    "name": "tyhand/workflow-bundle",
+    "license": "MIT",
+    "type": "symfony-bundle",
+    "description": "Experimental Workflow Bundle",
+    "autoload": {
+        "psr-0": { "TyHand\\WorkflowBundle": "" }
+    },
+    "target-dir": "TyHand/WorkflowBundle",
+    "require": {
+        "symfony/symfony": ">=2.3.0",
+        "doctrine/orm": ">=2.2.3",
+        "doctrine/doctrine-bundle": "1.2.*"
+    }
+}

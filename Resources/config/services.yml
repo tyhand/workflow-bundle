@@ -1,0 +1,14 @@
+services:
+    tyhand_workflow.context_relation_subscriber:
+        class: TyHand\WorkflowBundle\Listeners\ContextRelationSubscriber
+        tags:
+            - { name: doctrine.event_subscriber, connection: default }
+
+    tyhand_workflow.manager:
+        class: TyHand\WorkflowBundle\Workflow\WorkflowManager
+
+    tyhand_workflow.workflow_event_listener:
+        class: TyHand\WorkflowBundle\Listeners\WorkflowEventListener
+        arguments: [ @tyhand_workflow.manager, @doctrine.orm.entity_manager ]
+        tags:
+            - { name: kernel.event_listener, event: tyhand_workflow.workflow_event, method: onWorkflowEvent }
