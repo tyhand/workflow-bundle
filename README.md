@@ -1,5 +1,7 @@
 # Workflow Bundle
 
+[![Build Status](https://travis-ci.org/tyhand/workflow-bundle.svg?branch=master)](https://travis-ci.org/tyhand/workflow-bundle) [![codecov.io](https://codecov.io/github/tyhand/workflow-bundle/coverage.svg?branch=master)](https://codecov.io/github/tyhand/workflow-bundle?branch=master) [![Code Climate](https://codeclimate.com/github/tyhand/workflow-bundle/badges/gpa.svg)](https://codeclimate.com/github/tyhand/workflow-bundle)
+
 A simple experimental Symfony bundle built to help manage some of our application workflows.  Don't know if I like the end result, but here it is.
 
 ## Requirements
